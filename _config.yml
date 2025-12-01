@@ -23,12 +23,12 @@ repository               : "https://github.com/Astro-Sean/Astro-Sean.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "image.png"
+  avatar           : "image.jpg"
   name             : "Seán Brennan"
   pronouns         : # example: "she/her"
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "Munich, Germany"
+  employer         : "Max Planck Institute for Extraterrestrial Physics"
   uri              : # URL
   email            : "sbrennan@mpe.mpg.de"
 
