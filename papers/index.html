@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="First-author papers by Seán Brennan — links, summaries, and selected figures."
+      content="Publications led by Seán Brennan (first author) — links, summaries, and figures."
     />
     <link rel="canonical" href="https://astro-sean.github.io/papers/" />
-    <title>First-author papers — Seán Brennan</title>
+    <title>Publications — Seán Brennan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,21 +20,25 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="masthead">
+    <header class="masthead" id="top">
       <div class="masthead-inner">
         <div class="masthead-top">
           <div>
             <p class="masthead-role" style="margin: 0 0 0.35rem; font-size: 0.9rem">
               <a href="../index.html" class="masthead-title-link">← Home</a>
             </p>
-            <h1 class="masthead-name">First-author papers</h1>
-            <p class="masthead-role">Links and selected figures from the arXiv HTML or journal PDFs</p>
+            <h1 class="masthead-name" style="font-size: clamp(1.45rem, 4vw, 2.35rem)">Publications</h1>
+            <p class="masthead-role">Papers I led (first author) · Links and selected figures</p>
           </div>
           <nav class="masthead-nav" aria-label="Primary">
             <a href="../index.html">Home</a>
-            <a href="../about-research.html">About my research</a>
-            <a href="../index.html#research">Research themes</a>
-            <a href="../index.html#publications">Publications</a>
+            <a href="../about.html">About</a>
+            <a href="../about-research.html">Research</a>
+            <a href="../research-themes.html">Themes</a>
+            <a href="index.html" aria-current="page">Publications</a>
+            <a href="../publications.html">Bibliography</a>
+            <a href="../code.html">Code</a>
+            <a href="../cv.html">CV</a>
           </nav>
         </div>
       </div>
@@ -42,7 +46,14 @@
 
     <main id="main" class="page-shell page-shell--wide">
       <p class="breadcrumb">
-        <a href="../index.html">Home</a> · First-author papers
+        <a href="../index.html">Home</a> · Publications (first author)
+      </p>
+
+      <p style="margin: 0 0 1.5rem; max-width: 68ch; color: var(--ink-soft)">
+        These are peer-reviewed works where I was <strong>first author</strong> — I led the analysis, writing, and
+        coordination unless noted. Each page links to the journal or arXiv version and summarizes the science; where
+        arXiv’s HTML figures are reliable, there are direct links to view them (hotlinked images were removed because
+        arXiv’s <code>/xN.png</code> URLs often fail).
       </p>
 
       <ul class="paper-list">
@@ -50,43 +61,68 @@
           <a class="paper-list-title" href="sn-2023fyq-type-ibn.html"
             >Spectroscopic observations of progenitor activity 100 days before a Type Ibn supernova (SN 2023fyq)</a
           >
-          <p class="paper-list-meta">A&amp;A 684, L18 (2024) · ZTF precursor + spectra</p>
+          <p class="paper-list-meta">A&amp;A 684, L18 (2024)</p>
+          <p class="paper-list-blurb">
+            ZTF light curves plus NOT/Keck/Gemini spectra of a Type Ibn SN with long-lived precursor emission and
+            complex He&nbsp;I evolution before core collapse — evidence for asymmetric CSM and a genuine explosion.
+          </p>
         </li>
         <li>
           <a class="paper-list-title" href="sn-2022mop-precursor.html"
             >Precursor Activity Preceding Interacting Supernovae I: Bridging the Gap with SN 2022mop</a
           >
           <p class="paper-list-meta">Submitted to A&amp;A · arXiv:2503.08768</p>
+          <p class="paper-list-blurb">
+            Multi-epoch follow-up of a precursor in IC&nbsp;1496 and the later interacting SN at the same site —
+            connecting pre-explosion variability to the eventual Type&nbsp;IIn eruption.
+          </p>
         </li>
         <li>
           <a class="paper-list-title" href="sn-2021adxl.html"
             >SN 2021adxl: A luminous nearby interacting supernova in an extremely low-metallicity environment</a
           >
           <p class="paper-list-meta">A&amp;A 690, A259 (2024)</p>
+          <p class="paper-list-blurb">
+            A luminous nearby SN&nbsp;IIn in a very metal-poor host — photometry, spectra, and environment to constrain
+            interaction and progenitor context at low Z.
+          </p>
         </li>
         <li>
-          <a class="paper-list-title" href="autophot.html"
-            >The Automated Photometry of Transients pipeline (AUTOPHOT)</a
-          >
+          <a class="paper-list-title" href="autophot.html">The Automated Photometry of Transients pipeline (AUTOPHOT)</a>
           <p class="paper-list-meta">A&amp;A 667, A62 (2022)</p>
+          <p class="paper-list-blurb">
+            Methods paper: Python pipeline for forced photometry, uncertainty handling, and survey-style transient
+            follow-up (used across several of my observational projects).
+          </p>
         </li>
         <li>
           <a class="paper-list-title" href="sn-2016jbu-impostor-revealed.html"
             >The impostor revealed: SN 2016jbu was a terminal explosion</a
           >
           <p class="paper-list-meta">A&amp;A 664, L18 (2022)</p>
+          <p class="paper-list-blurb">
+            Letter arguing that SN/AT&nbsp;2016jbu was a core-collapse SN rather than a non-terminal impostor, using
+            spectral evolution and late-time confirmation.
+          </p>
         </li>
         <li>
           <a class="paper-list-title" href="at-2016jbu-photometry.html"
             >Photometric and spectroscopic evolution of the interacting transient AT 2016jbu (Gaia16cfr)</a
           >
           <p class="paper-list-meta">MNRAS 513, 5642 (2022)</p>
+          <p class="paper-list-blurb">
+            First of two AT&nbsp;2016jbu papers: multi-colour light curves and spectral sequence for this long-lived
+            interacting transient (with a companion paper on progenitor and modelling).
+          </p>
         </li>
         <li>
           <a class="paper-list-title" href="at-2016jbu-progenitor.html"
             >Progenitor, environment, and modelling of the interacting transient AT 2016jbu (Gaia16cfr)</a
           >
           <p class="paper-list-meta">MNRAS 513, 5666 (2022)</p>
+          <p class="paper-list-blurb">
+            Companion study: constraints on progenitor and CSM from modelling and host environment for AT&nbsp;2016jbu.
+          </p>
         </li>
       </ul>
     </main>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="About Seán Brennan — high-energy transients, ZTF, LSST, eROSITA, MPE."
+    />
+    <link rel="canonical" href="https://astro-sean.github.io/about.html" />
+    <title>About — Seán Brennan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="masthead" id="top">
+      <div class="masthead-inner">
+        <div class="masthead-top">
+          <div>
+            <p class="masthead-role" style="margin: 0 0 0.35rem; font-size: 0.9rem">
+              <a href="index.html" class="masthead-title-link">← Home</a>
+            </p>
+            <h1 class="masthead-name" style="font-size: clamp(1.5rem, 4vw, 2.35rem)">About me</h1>
+            <p class="masthead-role">Summary · Collaborations and interests</p>
+          </div>
+          <nav class="masthead-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html" aria-current="page">About</a>
+            <a href="about-research.html">Research</a>
+            <a href="research-themes.html">Themes</a>
+            <a href="papers/index.html">Publications</a>
+            <a href="publications.html">Bibliography</a>
+            <a href="code.html">Code</a>
+            <a href="cv.html">CV</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <p class="breadcrumb"><a href="index.html">Home</a> · About</p>
+
+      <section class="section" aria-labelledby="about-heading" style="margin-bottom: 0">
+        <div class="section-head">
+          <h2 id="about-heading">About</h2>
+          <span class="section-tag">Summary</span>
+        </div>
+        <p>
+          I work on <strong>high-energy astrophysical transients</strong>, combining
+          multi-wavelength photometry, X-ray data, and analysis methods that connect
+          observations to the physics of massive stars and core-collapse explosions. I am
+          especially interested in precursor activity, circumstellar interaction, and how
+          modern surveys let us probe the final evolutionary phases of massive stars.
+        </p>
+        <p>
+          I collaborate with the <strong>Zwicky Transient Facility (ZTF)</strong>, the
+          <strong>Rubin LSST</strong> transient and variable science community, and the
+          <strong>eROSITA</strong> consortium, and I develop photometric pipelines and
+          analysis workflows used in transient follow-up.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="y"></span> Seán Brennan · <a href="index.html" style="color: inherit">Home</a></p>
+    </footer>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

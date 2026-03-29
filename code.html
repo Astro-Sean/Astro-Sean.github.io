@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Code and software — Seán Brennan, Python pipelines, GitHub." />
+    <link rel="canonical" href="https://astro-sean.github.io/code.html" />
+    <title>Code &amp; software — Seán Brennan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="masthead" id="top">
+      <div class="masthead-inner">
+        <div class="masthead-top">
+          <div>
+            <p class="masthead-role" style="margin: 0 0 0.35rem; font-size: 0.9rem">
+              <a href="index.html" class="masthead-title-link">← Home</a>
+            </p>
+            <h1 class="masthead-name" style="font-size: clamp(1.45rem, 4vw, 2.2rem)">Code &amp; software</h1>
+            <p class="masthead-role">Open science · Pipelines and repositories</p>
+          </div>
+          <nav class="masthead-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="about-research.html">Research</a>
+            <a href="research-themes.html">Themes</a>
+            <a href="papers/index.html">Publications</a>
+            <a href="publications.html">Bibliography</a>
+            <a href="code.html" aria-current="page">Code</a>
+            <a href="cv.html">CV</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <p class="breadcrumb"><a href="index.html">Home</a> · Code &amp; software</p>
+
+      <section class="section" aria-labelledby="code-heading" style="margin-bottom: 0">
+        <div class="section-head">
+          <h2 id="code-heading">Code &amp; software</h2>
+          <span class="section-tag">Open science</span>
+        </div>
+        <p>
+          Analysis is done primarily in Python, with emphasis on reproducible notebooks,
+          modular pipelines, and sharing code alongside papers where possible.
+        </p>
+        <ul class="code-list">
+          <li>
+            <a href="https://github.com/Astro-Sean"><strong>GitHub</strong></a> — research
+            repositories, scripts, and project-specific tools.
+          </li>
+          <li>
+            Photometric pipelines and survey interfaces for ZTF and related transient
+            follow-up.
+          </li>
+          <li>
+            Spectral analysis workflows connected to community codes for classification and
+            physical interpretation.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="y"></span> Seán Brennan · <a href="index.html" style="color: inherit">Home</a></p>
+    </footer>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
