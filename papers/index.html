@@ -45,9 +45,9 @@
     <main id="main" class="page-shell page-shell--wide">
       <p class="paper-lede">
         Peer-reviewed works where I was <strong>first author</strong> (I led analysis, writing, and coordination unless
-        noted). Each page links to the journal or arXiv version and summarizes the science. Paper pages include an inline
-        PDF where the browser allows it (figures match the PDF), plus links to the arXiv HTML article for the same
-        panels.
+        noted). Each entry below has three short paragraphs—<strong>background</strong>, <strong>science</strong>, and
+        <strong>impact</strong>—and links to a dedicated page with the journal or arXiv version, the same overview, and
+        (where available) an inline PDF plus arXiv HTML figure anchors.
       </p>
 
       <ul class="paper-list">
@@ -56,79 +56,161 @@
             >Spectroscopic observations of progenitor activity 100 days before a Type Ibn supernova (SN 2023fyq)</a
           >
           <p class="paper-list-meta">A&amp;A 684, L18 (2024)</p>
-          <p class="paper-list-blurb">
-            <strong>What it is:</strong> ZTF discovery and multi-telescope spectra of a Type&nbsp;Ibn SN, including
-            observations about 100 days before explosion when the star was already bright and showing evolving helium
-            lines. <strong>Why it matters:</strong> ties real pre-SN activity to the final blast—key for how massive stars
-            lose mass and what wide-field surveys can catch before collapse.
-          </p>
+          <div class="paper-list-blurb">
+            <p>
+              <strong>Background.</strong> Massive stars shed gas before they explode; Type&nbsp;Ibn supernovae show
+              that material through narrow helium lines when the blast hits it. Catching the star <em>before</em>
+              collapse is still unusual, and linking that signal to the final supernova tests ideas about late-stage mass
+              loss.
+            </p>
+            <p>
+              <strong>Science.</strong> We use ZTF discovery plus NOT, Keck, and Gemini spectra of SN&nbsp;2023fyq,
+              including data taken about <strong>100 days before explosion</strong> when the progenitor was already
+              luminous and showing evolving He&nbsp;I lines. The sequence runs through peak and late times, where the
+              behaviour matches a genuine core-collapse supernova and points to dense, asymmetric circumstellar material.
+            </p>
+            <p>
+              <strong>Impact.</strong> The work ties real pre-explosion activity to the same event as the SN—something
+              wide-field surveys can now do often. That feeds models of which stars make Type&nbsp;Ibn events and how to
+              interpret high-cadence transient streams from ZTF, LSST, and follow-up networks.
+            </p>
+          </div>
         </li>
         <li>
           <a class="paper-list-title" href="sn-2022mop-precursor.html"
             >Precursor Activity Preceding Interacting Supernovae I: Bridging the Gap with SN 2022mop</a
           >
           <p class="paper-list-meta">Submitted to A&amp;A · arXiv:2503.08768</p>
-          <p class="paper-list-blurb">
-            <strong>What it is:</strong> follow-up of a weaker outburst and then a Type&nbsp;IIn supernova at the same sky
-            position in IC&nbsp;1496, with astrometry and modelling linking the two episodes.
-            <strong>Why it matters:</strong> shows how a “precursor” can foreshadow later interaction—useful for planning
-            follow-up and for counting linked eruptions in stellar populations.
-          </p>
+          <div class="paper-list-blurb">
+            <p>
+              <strong>Background.</strong> Some interacting supernovae may be preceded by weaker eruptions at the same
+              place on the sky. If those pairs are real, they bridge “precursor” variability and full supernova
+              interaction—but clear examples are still needed.
+            </p>
+            <p>
+              <strong>Science.</strong> We study SN&nbsp;2022mop in IC&nbsp;1496: an earlier phase consistent with a
+              stripped-envelope transient, then a later brightening as a Type&nbsp;IIn supernova at the same astrometric
+              position. Astrometry, light curves, and modelling connect the two episodes as one stellar sequence.
+            </p>
+            <p>
+              <strong>Impact.</strong> Linked precursor plus SN events inform how often stars throw off shells before
+              final collapse, how we should rank follow-up when precursors appear, and how population studies count
+              terminal versus repeated eruptions.
+            </p>
+          </div>
         </li>
         <li>
           <a class="paper-list-title" href="sn-2021adxl.html"
             >SN 2021adxl: A luminous nearby interacting supernova in an extremely low-metallicity environment</a
           >
           <p class="paper-list-meta">A&amp;A 690, A259 (2024)</p>
-          <p class="paper-list-blurb">
-            <strong>What it is:</strong> photometry, spectra, and host context for a bright, nearby interacting SN in
-            an extremely low-metallicity galaxy. <strong>Why it matters:</strong> most SN samples are metal-rich; this
-            event tests whether interaction and progenitor physics look the same when the host has almost no heavy
-            elements—relevant for early galaxies and stellar evolution.
-          </p>
+          <div class="paper-list-blurb">
+            <p>
+              <strong>Background.</strong> Most well-studied core-collapse supernovae live in galaxies with roughly
+              solar or higher metallicity. Explosions in extremely metal-poor hosts are rarer in the local sample, yet
+              they matter for early cosmic star formation and for testing winds and mass loss when stars contain few
+              heavy elements.
+            </p>
+            <p>
+              <strong>Science.</strong> SN&nbsp;2021adxl is a bright, nearby supernova whose emission is strongly
+              shaped by interaction with circumstellar gas. We present multi-band photometry, spectra, and host imaging
+              to characterize the transient and its very low-metallicity environment.
+            </p>
+            <p>
+              <strong>Impact.</strong> The case shows whether interaction strengths, progenitor clues, and host properties
+              match patterns seen at higher Z—important for extrapolating supernova physics to young galaxies and for
+              diversifying the observational training set used in theory and cosmology-related systematics.
+            </p>
+          </div>
         </li>
         <li>
           <a class="paper-list-title" href="autophot.html">The Automated Photometry of Transients pipeline (AUTOPHOT)</a>
           <p class="paper-list-meta">A&amp;A 667, A62 (2022)</p>
-          <p class="paper-list-blurb">
-            <strong>What it is:</strong> the methods paper for AUTOPHOT—Python software for forced photometry, realistic
-            uncertainties, and survey-style transient follow-up. <strong>Why it matters:</strong> published pipelines
-            make light curves reproducible and comparable across teams, which the transient field is still standardizing.
-          </p>
+          <div class="paper-list-blurb">
+            <p>
+              <strong>Background.</strong> Time-domain astronomy runs on light curves built from many telescopes and
+              programmes. Forced photometry—measuring flux at a known position even when a source is faint—is central to
+              survey follow-up, but results must be reproducible and easy to share.
+            </p>
+            <p>
+              <strong>Science.</strong> AUTOPHOT is a Python pipeline that automates photometry for transients, including
+              forced measurements, uncertainty treatment, and workflows aligned with survey-style data. The paper
+              documents design choices, performance tests, and practical use.
+            </p>
+            <p>
+              <strong>Impact.</strong> A published, citable pipeline lets other groups rerun the same analysis, compare
+              methods fairly, and build on a common baseline—standard in many fields and increasingly expected in
+              optical transient work. It also underpins several observational projects on this site.
+            </p>
+          </div>
         </li>
         <li>
           <a class="paper-list-title" href="sn-2016jbu-impostor-revealed.html"
             >The impostor revealed: SN 2016jbu was a terminal explosion</a
           >
           <p class="paper-list-meta">A&amp;A 664, L18 (2022)</p>
-          <p class="paper-list-blurb">
-            <strong>What it is:</strong> a short Letter arguing that AT&nbsp;2016jbu was a true core-collapse
-            supernova, not a non-destructive “impostor,” using spectra and late-time behaviour.
-            <strong>Why it matters:</strong> mis-labels skew population studies; this case shows how late data can flip
-            the classification of long-lived transients.
-          </p>
+          <div class="paper-list-blurb">
+            <p>
+              <strong>Background.</strong> Very luminous outbursts were sometimes called “supernova impostors”: giant
+              eruptions that mimic supernovae but were thought to leave the star intact. If true terminal explosions are
+              mis-classified as impostors, rates and energy budgets for massive stars drift off course.
+            </p>
+            <p>
+              <strong>Science.</strong> This Letter re-evaluates AT&nbsp;2016jbu / SN&nbsp;2016jbu using spectral
+              evolution and late-time data. The evidence favours a genuine core-collapse supernova rather than a
+              non-terminal impostor event.
+            </p>
+            <p>
+              <strong>Impact.</strong> The case is a concrete reminder that long-lived transients need late-time
+              confirmation before entering population studies. It sharpens criteria used in archival searches and
+              theoretical modelling of luminous, interacting events.
+            </p>
+          </div>
         </li>
         <li>
           <a class="paper-list-title" href="at-2016jbu-photometry.html"
             >Photometric and spectroscopic evolution of the interacting transient AT 2016jbu (Gaia16cfr)</a
           >
           <p class="paper-list-meta">MNRAS 513, 5642 (2022)</p>
-          <p class="paper-list-blurb">
-            <strong>What it is:</strong> multi-colour light curves and a full spectral sequence for the long-lived
-            interacting transient AT&nbsp;2016jbu (first of two papers). <strong>Why it matters:</strong> sets the
-            observational baseline any model of the event must match; pairs with the progenitor/environment companion.
-          </p>
+          <div class="paper-list-blurb">
+            <p>
+              <strong>Background.</strong> AT&nbsp;2016jbu is a long-duration, luminous transient powered by interaction
+              between fast ejecta and slower circumstellar material. A full observational record is required before
+              physical models can be tested in detail.
+            </p>
+            <p>
+              <strong>Science.</strong> This paper (the first of two on the same object) delivers multi-colour light
+              curves and a time-resolved spectral sequence from discovery through multiple peaks and decline phases.
+            </p>
+            <p>
+              <strong>Impact.</strong> The data set is the empirical benchmark any theory of the explosion must
+              reproduce; it also pairs directly with the companion paper on progenitor, environment, and modelling for
+              a complete picture of one well-observed event.
+            </p>
+          </div>
         </li>
         <li>
           <a class="paper-list-title" href="at-2016jbu-progenitor.html"
             >Progenitor, environment, and modelling of the interacting transient AT 2016jbu (Gaia16cfr)</a
           >
           <p class="paper-list-meta">MNRAS 513, 5666 (2022)</p>
-          <p class="paper-list-blurb">
-            <strong>What it is:</strong> companion to the photometry paper—progenitor clues, host environment, and
-            modelling for AT&nbsp;2016jbu. <strong>Why it matters:</strong> turns light curves into quantitative limits on
-            mass loss and circumstellar structure; shows the usual split between “data” and “interpretation” papers.
-          </p>
+          <div class="paper-list-blurb">
+            <p>
+              <strong>Background.</strong> Light curves and spectra alone rarely fix a unique progenitor. Connecting
+              observations to stellar models needs pre-explosion constraints, host context, and simple physical
+              modelling—especially for complex interacting transients such as AT&nbsp;2016jbu.
+            </p>
+            <p>
+              <strong>Science.</strong> This companion paper combines archival imaging, host-galaxy information, and
+              modelling to constrain the progenitor channel, mass-loss history, and structure of the circumstellar
+              material around the event.
+            </p>
+            <p>
+              <strong>Impact.</strong> Together with the photometry paper, it shows how modern transient studies often
+              split into a phenomenology paper plus an interpretation paper—turning raw data into quantitative limits
+              useful for comparing with other interacting SNe and with stellar-evolution theory.
+            </p>
+          </div>
         </li>
       </ul>
     </main>
