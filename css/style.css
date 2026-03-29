@@ -163,6 +163,29 @@ a:hover {
   margin-top: 0;
 }
 
+/* Interior pages (not home): single-line title in masthead — no inline font sizes */
+.masthead-brand--page {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.masthead-brand--page .masthead-name--page {
+  font-size: clamp(1.45rem, 4vw, 2.2rem);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+}
+
+/* Paper pages: compact label above main article title */
+.masthead-brand--page .masthead-name--paper {
+  font-size: clamp(1.05rem, 2.75vw, 1.4rem);
+  line-height: 1.28;
+}
+
+p.masthead-name.masthead-name--page {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
+
 .masthead-kicker {
   margin: 0 0 0.4rem;
   font-size: 0.72rem;
@@ -614,6 +637,10 @@ a:hover {
   margin-bottom: 0;
 }
 
+.section--tight {
+  margin-bottom: 0;
+}
+
 .section-head {
   display: flex;
   align-items: baseline;
@@ -828,6 +855,10 @@ h2.section-head {
 
 .page-shell--wide {
   max-width: 56rem;
+}
+
+.page-shell .page-cta {
+  margin-top: 2rem;
 }
 
 .breadcrumb {
