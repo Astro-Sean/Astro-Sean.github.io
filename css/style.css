@@ -1,27 +1,22 @@
-/* Astronomy postdoc academic site: structured layout, responsive (editorial / light masthead) */
-
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+/* Astronomy postdoc academic site: structured layout, responsive */
 
 :root {
-  --ink: #14181c;
-  --ink-soft: #3d4650;
-  --surface: #ebe8e4;
+  --ink: #0a0f14;
+  --ink-soft: #2a3540;
+  --surface: #eef1f4;
   --surface-elevated: #ffffff;
   --masthead: #0a1628;
-  --masthead-surface: #faf9f7;
-  --masthead-ink: #14181c;
-  --masthead-muted: rgba(20, 24, 28, 0.62);
+  --masthead-muted: rgba(255, 255, 255, 0.78);
   --accent: #1a5f82;
   --accent-bright: #2478a3;
   --accent-warm: #a67c00;
-  --border: #d4cec6;
+  --border: #c8d2dc;
   --radius: 10px;
   --radius-sm: 6px;
-  --shadow: 0 1px 3px rgba(15, 20, 25, 0.06);
-  --shadow-card: 0 2px 16px rgba(15, 20, 25, 0.06);
+  --shadow: 0 1px 3px rgba(15, 20, 25, 0.08);
+  --shadow-card: 0 4px 24px rgba(15, 20, 25, 0.09);
   --font-sans: "DM Sans", system-ui, sans-serif;
   --font-display: "Fraunces", "Georgia", serif;
-  --font-quote: "Cormorant Garamond", "Georgia", serif;
   --sidebar-width: 18.5rem;
   --content-max: 48rem;
 }
@@ -54,7 +49,7 @@ body {
   font-size: 1.125rem;
   line-height: 1.72;
   color: var(--ink);
-  background: linear-gradient(180deg, #f0ece6 0%, var(--surface) 38%, #f5f3ef 100%);
+  background: linear-gradient(180deg, #e2e8ef 0%, var(--surface) 42%, #f4f6f9 100%);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -89,19 +84,29 @@ a:hover {
   outline-offset: 2px;
 }
 
-/* Masthead — light editorial bar (inspired by clean academic portfolio layouts) */
+/* Masthead — site banner image + dark overlay (file: /files/banner.jpeg) */
 .masthead {
   position: relative;
-  color: var(--masthead-ink);
+  color: #fff;
   padding: 0;
-  border-bottom: 1px solid var(--border);
-  background-color: var(--masthead-surface);
-  background-image: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #0a1628;
+  /* Root-relative so it always resolves from site root (works from /papers/ etc.). */
+  background-image: linear-gradient(
+      165deg,
+      rgba(8, 18, 32, 0.88) 0%,
+      rgba(14, 36, 58, 0.82) 45%,
+      rgba(10, 28, 48, 0.9) 100%
+    ),
+    url("/files/banner.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .masthead {
-    background-color: var(--masthead-surface);
+    background-image: linear-gradient(165deg, #0a1628 0%, #122a45 55%, #0d2138 100%);
   }
 }
 
@@ -136,21 +141,21 @@ a:hover {
   letter-spacing: -0.02em;
   line-height: 1.12;
   margin: 0;
-  color: var(--masthead-ink);
-  text-shadow: none;
+  color: #fff;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45), 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .masthead-role {
   margin: 0.5rem 0 0;
   font-size: 1.05rem;
-  color: var(--ink-soft);
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
   max-width: 36rem;
-  text-shadow: none;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
 }
 
 .masthead-role strong {
-  color: var(--ink);
+  color: rgba(255, 255, 255, 0.92);
   font-weight: 600;
 }
 
@@ -164,8 +169,8 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.11em;
   text-transform: uppercase;
-  color: var(--masthead-muted);
-  text-shadow: none;
+  color: rgba(255, 255, 255, 0.72);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
 }
 
 .masthead-tagline {
@@ -173,35 +178,14 @@ a:hover {
   font-size: clamp(0.97rem, 1.85vw, 1.07rem);
   line-height: 1.55;
   font-weight: 500;
-  color: var(--ink-soft);
-  max-width: 42rem;
-  text-shadow: none;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 40rem;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.38);
 }
 
 .masthead-tagline strong {
-  color: var(--ink);
+  color: #fff;
   font-weight: 600;
-}
-
-/* Literary epigraph under the name (home) */
-.masthead-quote {
-  margin: 0.65rem 0 0;
-  font-family: var(--font-quote);
-  font-size: clamp(1.15rem, 2.4vw, 1.4rem);
-  font-style: italic;
-  font-weight: 500;
-  line-height: 1.45;
-  color: var(--ink-soft);
-  max-width: 36rem;
-}
-
-.masthead-quote-attr {
-  font-style: normal;
-  font-family: var(--font-sans);
-  font-size: 0.88em;
-  font-weight: 600;
-  color: var(--masthead-muted);
-  letter-spacing: 0.02em;
 }
 
 .masthead-nav {
@@ -218,7 +202,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: rgba(255, 255, 255, 0.78);
   text-decoration: none;
   border-radius: 999px;
   border: 1px solid transparent;
@@ -233,8 +217,8 @@ a:hover {
 }
 
 .masthead-nav a:hover {
-  color: var(--accent);
-  background: rgba(26, 95, 130, 0.08);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
   text-decoration: none;
 }
 
@@ -244,9 +228,9 @@ a:hover {
 }
 
 .masthead-nav a[aria-current="page"] {
-  background: rgba(26, 95, 130, 0.12);
-  border: 1px solid rgba(26, 95, 130, 0.28);
-  color: var(--accent) !important;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #fff !important;
 }
 
 /* Quick actions under hero */
@@ -256,7 +240,7 @@ a:hover {
   gap: 0.65rem;
   margin-top: 1.75rem;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-action {
@@ -276,24 +260,24 @@ a:hover {
 }
 
 .btn-action--primary {
-  background: var(--accent);
-  color: #fff !important;
+  background: #fff;
+  color: var(--masthead) !important;
 }
 
 .btn-action--primary:hover {
-  background: var(--accent-bright);
-  color: #fff !important;
+  background: #e8eef4;
+  color: var(--masthead) !important;
 }
 
 .btn-action--ghost {
-  background: transparent;
-  color: var(--ink) !important;
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-action--ghost:hover {
-  background: rgba(26, 95, 130, 0.06);
-  color: var(--accent) !important;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff !important;
 }
 
 /* Page grid: sidebar + main */
@@ -384,34 +368,6 @@ a:hover {
   background: #1a2f42;
 }
 
-.sidebar-contact-title {
-  margin: 0 0 0.35rem;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink);
-  text-align: center;
-}
-
-.sidebar-name-line {
-  margin: 0 0 0.65rem;
-  font-size: 0.9375rem;
-  line-height: 1.45;
-  color: var(--ink-soft);
-  text-align: center;
-}
-
-.sidebar-name-line strong {
-  color: var(--ink);
-}
-
-.sidebar-pronouns {
-  font-weight: 500;
-  color: var(--masthead-muted);
-  font-size: 0.9em;
-}
-
 .sidebar-affiliation {
   margin: 0 0 0.75rem;
   font-size: 0.9375rem;
@@ -492,7 +448,7 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow-card);
-  border-left: 3px solid var(--accent);
+  border-top: 3px solid var(--accent);
 }
 
 .home-hero-title {
@@ -514,39 +470,6 @@ a:hover {
 
 .home-hero p:last-of-type {
   margin-bottom: 0;
-}
-
-/* Home: CONTACT block (name, affiliation, email) */
-.home-contact {
-  margin: 0 0 1.2rem;
-  padding-bottom: 1.1rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.home-contact-heading {
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink);
-  margin: 0 0 0.65rem;
-}
-
-.home-contact p {
-  margin: 0 0 0.45rem;
-  font-size: 1.02rem;
-  line-height: 1.58;
-  color: var(--ink-soft);
-  max-width: 68ch;
-}
-
-.home-contact p:last-child {
-  margin-bottom: 0;
-}
-
-.home-contact strong {
-  color: var(--ink);
 }
 
 .home-cta-row {
@@ -883,12 +806,12 @@ h2.section-head {
 
 /* Footer */
 .site-footer {
-  background: var(--masthead-surface);
-  color: var(--masthead-muted);
+  background: linear-gradient(180deg, #081018 0%, var(--masthead) 100%);
+  color: rgba(255, 255, 255, 0.58);
   text-align: center;
   padding: 1.5rem 1.5rem 1.65rem;
   font-size: 0.8125rem;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .site-footer p {

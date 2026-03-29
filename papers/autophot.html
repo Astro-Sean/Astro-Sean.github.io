@@ -23,7 +23,7 @@
           </div>
           <nav class="masthead-nav" aria-label="Primary">
             <a href="../index.html">Home</a>
-            <a href="../about.html">Bio</a>
+            <a href="../about.html">About</a>
             <a href="../about-research.html">Research</a>
             <a href="../research-themes.html">Themes</a>
             <a href="index.html" aria-current="page">Publications</a>
@@ -46,9 +46,24 @@
         <a href="https://github.com/Astro-Sean">Code (GitHub)</a>
       </div>
 
-      <p>
-        Pipeline paper: automated photometry for transient follow-up, uncertainty handling, and survey interfaces.
-      </p>
+      <section class="section" style="margin-bottom: 1.75rem">
+        <h2 class="section-head" style="margin-top: 0"><span>Summary</span></h2>
+        <p>
+          <strong>AUTOPHOT</strong> is a Python software pipeline for measuring the brightness of astronomical transients
+          in imaging data. It is built for <strong>forced photometry</strong>: even when a source is faint or not cleanly
+          detected, the code measures flux at the expected position using survey-style image stacks and careful treatment
+          of noise. The paper documents the algorithms, uncertainty estimates, and practical workflow for time-domain
+          follow-up.
+        </p>
+        <h3>Why it matters</h3>
+        <p>
+          Modern surveys discover thousands of transients per night; follow-up groups need tools that are fast,
+          documented, and give <em>consistent</em> light curves across observers and telescopes. A published pipeline
+          lets others reproduce your numbers, compare methods fairly, and build on the same foundation—standard practice in
+          fields like particle physics, still growing in optical transient work. AUTOPHOT also supports several of the
+          observational projects described elsewhere on this site.
+        </p>
+      </section>
 
       <h2 class="section-head" style="margin-top: 2rem"><span>Figures</span></h2>
       <p class="figure-note">
