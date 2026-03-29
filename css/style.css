@@ -633,6 +633,14 @@ a:hover {
   color: var(--ink);
 }
 
+h2.section-head {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
 .section-tag {
   font-size: 0.7rem;
   font-weight: 700;
@@ -909,25 +917,44 @@ a:hover {
   border: 1px solid var(--border);
 }
 
+/* Publications index (first-author list) */
+.paper-lede {
+  margin: 0 0 1.75rem;
+  max-width: 68ch;
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
 .paper-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .paper-list li {
-  margin: 0 0 1rem;
-  padding: 1rem 1.1rem;
+  margin: 0;
+  padding: 1.15rem 1.25rem 1.2rem;
   background: var(--surface-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  border-left: 4px solid var(--accent);
+}
+
+.paper-list li > p {
+  margin: 0;
 }
 
 .paper-list a.paper-list-title {
+  display: block;
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: clamp(1.05rem, 2.5vw, 1.15rem);
   font-weight: 600;
+  line-height: 1.38;
   color: var(--ink);
 }
 
@@ -936,37 +963,81 @@ a:hover {
 }
 
 .paper-list-meta {
-  font-size: 0.88rem;
+  font-size: 0.875rem;
   color: var(--ink-soft);
-  margin: 0.35rem 0 0;
+  margin: 0.5rem 0 0;
+  letter-spacing: 0.01em;
 }
 
 .paper-list-blurb {
-  font-size: 0.95rem;
-  line-height: 1.55;
+  font-size: 0.96rem;
+  line-height: 1.58;
   color: var(--ink-soft);
-  margin: 0.5rem 0 0;
+  margin: 0.55rem 0 0;
   max-width: 65ch;
 }
 
-/* arXiv figure callouts when we link out instead of hotlinking broken /xN.png URLs */
+/* Inline PDF (figures) — works in many desktop browsers */
+.paper-pdf-embed-wrap {
+  margin: 1.25rem 0 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface-elevated);
+  box-shadow: var(--shadow);
+}
+
+.paper-pdf-embed {
+  display: block;
+  width: 100%;
+  min-height: 32rem;
+  height: min(78vh, 52rem);
+  border: 0;
+}
+
+@media (max-width: 639px) {
+  .paper-pdf-embed {
+    min-height: 22rem;
+    height: 70vh;
+  }
+}
+
+/* arXiv figure links (anchors on HTML article) */
 .figure-link-list {
   list-style: none;
   margin: 1rem 0 0;
   padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .figure-link-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .figure-link-list li {
-  margin: 0 0 0.65rem;
-  padding: 0.65rem 0.85rem;
+  margin: 0;
+  padding: 0.75rem 0.9rem;
   background: var(--surface-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   font-size: 0.95rem;
+  line-height: 1.45;
 }
 
 .figure-link-list a {
   font-weight: 600;
+}
+
+/* Paper page: title block + body text rhythm */
+.page-shell--wide > h1.page-title {
+  max-width: 52rem;
+}
+
+.page-shell--wide > p:not(.page-sub):not(.figure-note) {
+  max-width: 68ch;
 }
 
 .masthead-title-link {
