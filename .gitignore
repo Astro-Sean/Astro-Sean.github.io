@@ -1,23 +1,13 @@
-# Ignore the contents of the _site directory and other cache directories
-_site/
-.sass-cache/
-
-# Ignore the directory for local files during development
-local/
-
-# Ignore the Gemfile that is generated
-Gemfile.lock
-
-# Ignore files created by npm
-node_modules
-package-lock.json
-
-# Ignore the vendor file at root level and bundle for alternative installation
-/vendor/
-.bundle/
-
-# Ignore folders related to IDEs
-.vscode/
-
-# Ignore files created by MacOS
+# OS / editor
 .DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+*.swo
+.env
+.env.*
+
+# Keep the optional local GitHub Pages clone out of this tree if you init git here
+# (uncomment if you track only site source in this folder)
+# Astro-Sean.github.io/

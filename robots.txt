@@ -1,4 +1,4 @@
-# https://astro-sean.github.io/ — allow indexing of public pages
+# https://astro-sean.github.io/ — public pages are allowed
 User-agent: *
 Allow: /
 
