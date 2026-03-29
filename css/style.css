@@ -78,7 +78,7 @@ a:hover {
   outline-offset: 2px;
 }
 
-/* Masthead — photo + dark overlay (replace images/banner.jpg with your own wide shot) */
+/* Masthead — photo + dark overlay (asset: images/banner.jpeg) */
 .masthead {
   position: relative;
   color: #fff;
@@ -91,7 +91,7 @@ a:hover {
       rgba(14, 36, 58, 0.82) 45%,
       rgba(10, 28, 48, 0.9) 100%
     ),
-    url("../images/banner.jpg");
+    url("../images/banner.jpeg");
   background-size: cover;
   background-position: center 28%;
   background-repeat: no-repeat;
