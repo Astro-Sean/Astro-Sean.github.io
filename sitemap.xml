@@ -3,32 +3,32 @@
   <url>
     <loc>https://astro-sean.github.io/</loc>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <priority>1</priority>
   </url>
   <url>
     <loc>https://astro-sean.github.io/about.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://astro-sean.github.io/about-research.html</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>yearly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://astro-sean.github.io/research-themes.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://astro-sean.github.io/publications.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://astro-sean.github.io/code.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://astro-sean.github.io/cv.html</loc>
@@ -38,7 +38,7 @@
   <url>
     <loc>https://astro-sean.github.io/papers/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://astro-sean.github.io/papers/sn-2023fyq-type-ibn.html</loc>
@@ -63,16 +63,16 @@
   <url>
     <loc>https://astro-sean.github.io/papers/sn-2016jbu-impostor-revealed.html</loc>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.65</priority>
   </url>
   <url>
     <loc>https://astro-sean.github.io/papers/at-2016jbu-photometry.html</loc>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.65</priority>
   </url>
   <url>
     <loc>https://astro-sean.github.io/papers/at-2016jbu-progenitor.html</loc>
     <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.65</priority>
   </url>
 </urlset>
