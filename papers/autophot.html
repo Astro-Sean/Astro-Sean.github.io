@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AUTOPHOT — Seán Brennan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <div class="masthead-top">
+          <div>
+            <p class="masthead-role" style="margin: 0 0 0.35rem; font-size: 0.9rem">
+              <a href="../index.html" class="masthead-title-link">← Home</a>
+            </p>
+            <h1 class="masthead-name" style="font-size: 1.2rem">AUTOPHOT</h1>
+          </div>
+          <nav class="masthead-nav" aria-label="Primary"><a href="index.html">All papers</a></nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell page-shell--wide">
+      <p class="breadcrumb">
+        <a href="../index.html">Home</a> · <a href="index.html">First-author papers</a> · AUTOPHOT
+      </p>
+
+      <h1 class="page-title">The Automated Photometry of Transients pipeline (AUTOPHOT)</h1>
+      <p class="page-sub">Brennan, S. J., &amp; Fraser, M. · <em>Astronomy &amp; Astrophysics</em> 667, A62 (2022)</p>
+
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2201.02635">arXiv abstract</a>
+        <a href="https://arxiv.org/pdf/2201.02635.pdf">arXiv PDF</a>
+        <a href="https://doi.org/10.1051/0004-6361/202243067">Journal (DOI)</a>
+        <a href="https://github.com/Astro-Sean">Code (GitHub)</a>
+      </div>
+
+      <p>
+        Pipeline paper: automated photometry for transient follow-up, uncertainty handling, and survey interfaces.
+      </p>
+
+      <h2 class="section-head" style="margin-top: 2rem"><span>Figures</span></h2>
+      <p class="figure-note">
+        arXiv HTML is not available for this volume. Use the <strong>PDF</strong> for flowcharts, example light curves,
+        and performance tests. You can add exported PNGs under <code>papers/figures/autophot/</code> locally if you
+        want self-hosted images later.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="y"></span> Seán Brennan</p>
+    </footer>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

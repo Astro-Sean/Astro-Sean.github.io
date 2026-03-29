@@ -590,3 +590,142 @@ a:hover {
   margin: 0;
   max-width: none;
 }
+
+/* Standalone pages (about-research, papers) */
+.page-shell {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3.5rem;
+}
+
+.page-shell--wide {
+  max-width: 56rem;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin: 0 0 1.25rem;
+}
+
+.breadcrumb a {
+  font-weight: 600;
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 4vw, 2.1rem);
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: var(--ink);
+}
+
+.page-sub {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  margin: 0 0 1.75rem;
+}
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 0 0 1.5rem;
+}
+
+.paper-links a {
+  display: inline-flex;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+}
+
+.paper-links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.figure-grid {
+  display: grid;
+  gap: 1.75rem;
+  margin: 1.5rem 0 0;
+}
+
+.figure-grid figure {
+  margin: 0;
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  box-shadow: var(--shadow);
+}
+
+.figure-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-sm);
+}
+
+.figure-grid figcaption {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  margin-top: 0.65rem;
+  line-height: 1.5;
+}
+
+.figure-note {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  background: #eef4f8;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.paper-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.paper-list li {
+  margin: 0 0 1rem;
+  padding: 1rem 1.1rem;
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.paper-list a.paper-list-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.paper-list a.paper-list-title:hover {
+  color: var(--accent);
+}
+
+.paper-list-meta {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin: 0.35rem 0 0;
+}
+
+.masthead-title-link {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.masthead-title-link:hover {
+  text-decoration: underline;
+}
