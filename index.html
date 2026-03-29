@@ -5,8 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Seán Brennan — postdoctoral researcher in high-energy transients, massive stars, and supernovae (MPE, Munich)."
+      content="Seán Brennan — postdoctoral researcher in high-energy transients, massive stars, and supernovae (MPE, Garching). ZTF, Rubin LSST, eROSITA."
     />
+    <meta name="author" content="Seán Brennan" />
+    <meta name="theme-color" content="#0a1628" />
+    <link rel="canonical" href="https://astro-sean.github.io/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Seán Brennan" />
+    <meta property="og:title" content="Seán Brennan — Astrophysics" />
+    <meta
+      property="og:description"
+      content="Postdoctoral researcher at MPE, Munich. High-energy transients, massive stars, time-domain astronomy (ZTF, LSST, eROSITA)."
+    />
+    <meta property="og:url" content="https://astro-sean.github.io/" />
+    <meta
+      property="og:image"
+      content="https://astro-sean.github.io/files/profile.jpg"
+    />
+    <meta property="og:image:alt" content="Seán Brennan" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Seán Brennan — Astrophysics" />
+    <meta
+      name="twitter:description"
+      content="Postdoctoral researcher at MPE. Transients, massive stars, surveys."
+    />
+    <meta name="twitter:image" content="https://astro-sean.github.io/files/profile.jpg" />
     <title>Seán Brennan — Astrophysics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +38,32 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Seán Brennan",
+        "jobTitle": "Postdoctoral Researcher",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Max Planck Institute for Extraterrestrial Physics",
+          "address": { "@type": "PostalAddress", "addressLocality": "Garching", "addressCountry": "DE" }
+        },
+        "email": "mailto:sbrennan@mpe.mpg.de",
+        "url": "https://astro-sean.github.io/",
+        "sameAs": [
+          "https://orcid.org/0000-0003-1325-6235",
+          "https://github.com/Astro-Sean"
+        ],
+        "image": "https://astro-sean.github.io/files/profile.jpg",
+        "knowsAbout": [
+          "Astrophysics",
+          "Supernovae",
+          "Time-domain astronomy",
+          "High-energy transients"
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -60,10 +109,17 @@
       <aside class="sidebar" aria-label="Profile and links">
         <div class="sidebar-card">
           <div class="profile-visual">
-            <!-- Uncomment when you add a portrait (e.g. save as images/profile.jpg):
-            <img class="profile-img" src="images/profile.jpg" alt="Seán Brennan" width="280" height="280" />
-            -->
-            <span class="profile-fallback" aria-hidden="true">SB</span>
+            <img
+              id="profile-photo"
+              class="profile-img"
+              src="files/profile.jpg"
+              alt="Portrait of Seán Brennan, postdoctoral researcher in astrophysics at MPE"
+              width="320"
+              height="320"
+              fetchpriority="high"
+              decoding="async"
+            />
+            <span class="profile-fallback" id="profile-fallback" aria-hidden="true">SB</span>
           </div>
           <p class="sidebar-affiliation">
             <strong>Postdoctoral researcher</strong>
@@ -238,6 +294,15 @@
     </footer>
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
+      (function () {
+        var img = document.getElementById("profile-photo");
+        var fb = document.getElementById("profile-fallback");
+        if (!img || !fb) return;
+        img.addEventListener("error", function () {
+          img.remove();
+          fb.removeAttribute("aria-hidden");
+        });
+      })();
     </script>
   </body>
 </html>
