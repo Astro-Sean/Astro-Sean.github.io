@@ -38,18 +38,20 @@
     </header>
 
     <main id="main" class="page-shell page-shell--wide">
+      <p class="breadcrumb"><a href="index.html">Publications</a> / AUTOPHOT</p>
       <h1 class="page-title">The Automated Photometry of Transients pipeline (AUTOPHOT)</h1>
       <p class="page-sub">Brennan, S. J., &amp; Fraser, M. · <em>Astronomy &amp; Astrophysics</em> 667, A62 (2022)</p>
 
       <div class="paper-links">
         <a href="https://arxiv.org/abs/2201.02635">arXiv abstract</a>
         <a href="https://arxiv.org/pdf/2201.02635.pdf">arXiv PDF</a>
+        <a href="https://arxiv.org/html/2201.02635">arXiv HTML</a>
         <a href="https://doi.org/10.1051/0004-6361/202243067">Journal (DOI)</a>
         <a href="https://github.com/Astro-Sean">Code (GitHub)</a>
       </div>
 
       <section class="section section--paper-blurb">
-        <h2 class="section-head" style="margin-top: 0"><span>Overview</span></h2>
+        <h2 class="section-head section-head--first"><span>Overview</span></h2>
         <p>
           <strong>Background.</strong> Time-domain astronomy runs on light curves built from many telescopes and
           programmes. Forced photometry (measuring flux at a known position even when a source is faint) is central to
@@ -67,11 +69,46 @@
         </p>
       </section>
 
-      <h2 class="section-head" style="margin-top: 2rem"><span>Figures</span></h2>
-      <p class="figure-note">
-        arXiv HTML is not available for this volume. Use the <strong>PDF</strong> for flowcharts, example light curves,
-        and performance tests. You can add exported PNGs under <code>papers/figures/autophot/</code> locally if you
-        want self-hosted images later.
+      <h2 class="section-head section-head--spaced"><span>Key figures</span><span class="section-tag">from the paper</span></h2>
+      <div class="figure-grid figure-grid--two">
+        <figure>
+          <a href="figures/autophot/fwhm-flowchart.png">
+            <img
+              src="figures/autophot/fwhm-flowchart.png"
+              alt="Flowchart of AUTOPHOT's iterative FWHM measurement: detect sources at a threshold, keep isolated sources away from the image boundary, fit an analytical model, sigma clip extended objects, repeat until stable"
+              width="792"
+              height="1126"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+          <figcaption>
+            <span class="fig-num">Fig. 1.</span> The iterative loop AUTOPHOT uses to pin down an image's
+            FWHM before photometry begins.
+            <span class="figure-credit">Brennan &amp; Fraser 2022, <em>A&amp;A</em> 667, A62.</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <a href="figures/autophot/aperture-photometry.png">
+            <img
+              src="figures/autophot/aperture-photometry.png"
+              alt="Aperture photometry of an isolated point source showing the aperture radius and the inner and outer sky annulus"
+              width="413"
+              height="373"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+          <figcaption>
+            <span class="fig-num">Fig. 2.</span> Source aperture and sky annulus on a real cutout: how the
+            pipeline separates source flux from background.
+            <span class="figure-credit">Brennan &amp; Fraser 2022, <em>A&amp;A</em> 667, A62.</span>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="figure-note figure-note--after-grid">
+        More panels (zeropoint diagnostics, limiting-magnitude injection tests, DAOPHOT comparisons) are in the
+        <a href="https://arxiv.org/html/2201.02635">arXiv HTML</a> and PDF versions.
       </p>
     </main>
 

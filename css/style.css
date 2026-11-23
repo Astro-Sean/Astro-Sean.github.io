@@ -919,6 +919,13 @@ h2.section-head {
   margin: 1.5rem 0 0;
 }
 
+@media (min-width: 640px) {
+  .figure-grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+}
+
 .figure-grid figure {
   margin: 0;
   background: var(--surface-elevated);
@@ -933,6 +940,16 @@ h2.section-head {
   height: auto;
   display: block;
   border-radius: var(--radius-sm);
+  background: #fff;
+}
+
+.figure-grid a:has(img) {
+  display: block;
+}
+
+.figure-grid a:has(img):hover img {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
 }
 
 .figure-grid figcaption {
@@ -940,6 +957,19 @@ h2.section-head {
   color: var(--ink-soft);
   margin-top: 0.65rem;
   line-height: 1.5;
+}
+
+.figure-grid .fig-num {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.figure-credit {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  opacity: 0.8;
 }
 
 .figure-note {
@@ -950,6 +980,10 @@ h2.section-head {
   background: #eef4f8;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
+}
+
+.figure-note--after-grid {
+  margin-top: 1.25rem;
 }
 
 /* Publications index (first-author list) */
@@ -978,6 +1012,39 @@ h2.section-head {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   border-left: 4px solid var(--accent);
+}
+
+/* Thumbnail + text row inside each paper card */
+.paper-item {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+@media (min-width: 700px) {
+  .paper-item {
+    grid-template-columns: 13rem minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+.paper-thumb {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  overflow: hidden;
+}
+
+.paper-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.paper-thumb:hover {
+  border-color: var(--accent);
 }
 
 .paper-list li > p {
@@ -1086,6 +1153,15 @@ h2.section-head {
 
 .page-shell--wide > p:not(.page-sub):not(.figure-note) {
   max-width: 68ch;
+}
+
+/* Section head spacing on paper pages (replaces inline styles) */
+.section-head--first {
+  margin-top: 0;
+}
+
+.section-head--spaced {
+  margin-top: 2.25rem;
 }
 
 .masthead-title-link {

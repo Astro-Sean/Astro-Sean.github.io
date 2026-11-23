@@ -68,6 +68,43 @@
             physical interpretation (reproducible figures and tables for papers).
           </li>
         </ul>
+        <h3>What the pipeline looks like</h3>
+        <div class="figure-grid figure-grid--two">
+          <figure>
+            <a href="papers/autophot.html">
+              <img
+                src="papers/figures/autophot/fwhm-flowchart.png"
+                alt="Flowchart of AUTOPHOT's iterative FWHM-finding loop: source detection with a threshold criterion, selecting isolated sources, fitting an analytical model, and sigma clipping extended objects"
+                width="792"
+                height="1126"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <figcaption>
+              <span class="fig-num">AUTOPHOT.</span> How the pipeline settles on an image FWHM:
+              detect, fit, clip, repeat until the source list is stable.
+              <span class="figure-credit">Brennan &amp; Fraser 2022, <em>A&amp;A</em> 667, A62.</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <a href="papers/autophot.html">
+              <img
+                src="papers/figures/autophot/aperture-photometry.png"
+                alt="Aperture photometry of an isolated point source: aperture radius, inner sky annulus, and outer sky annulus marked on an image cutout"
+                width="413"
+                height="373"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <figcaption>
+              <span class="fig-num">Apertures.</span> Source aperture and sky annulus as AUTOPHOT
+              applies them to an isolated point source.
+              <span class="figure-credit">Brennan &amp; Fraser 2022, <em>A&amp;A</em> 667, A62.</span>
+            </figcaption>
+          </figure>
+        </div>
       </section>
     </main>
 

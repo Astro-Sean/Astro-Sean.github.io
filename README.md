@@ -10,7 +10,7 @@ Personal site for **Seán Brennan** — static HTML and CSS, served with [GitHub
 |------|---------|
 | `index.html`, `about*.html`, `code.html`, … | Main pages |
 | `css/` | Stylesheets |
-| `papers/` | First-author paper pages |
+| `papers/` | First-author paper pages; `papers/figures/` holds self-hosted figure PNGs |
 | `files/` | CV (PDF), photos, banner image, favicon |
 | `robots.txt`, `sitemap.xml` | SEO |
 | `.nojekyll` | Use GitHub Pages without Jekyll processing |

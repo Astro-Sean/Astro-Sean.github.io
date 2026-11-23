@@ -5,8 +5,26 @@ desktop.ini
 *~
 *.swp
 *.swo
+*.code-workspace
 .env
 .env.*
+
+# AI agent tooling and session files - keep off the public site
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+.claude/
+.cursor/
+.devin/
+.agents/
+.windsurf/
+.codeium/
+.aider*
+.cline/
+.codex/
+.continue/
+.copilot/
+*.agent.log
 
 # Keep the optional local GitHub Pages clone out of this tree if you init git here
 # (uncomment if you track only site source in this folder)
